@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB R2018b"><title>Untitled</title><style type="text/css">.rtcContent { padding: 30px; } .CodeBlock { background-color: #F7F7F7; margin: 10px 0 10px 0;}
+.S0 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S1 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S2 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S3 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S4 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 4px 4px 0px 0px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S5 { color: rgb(64, 64, 64); padding: 10px 0px 6px 17px; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px; overflow-x: hidden; line-height: 17.234001159668px;  }
+.variableValue { width: 100% !important; }
+.embeddedOutputsMatrixElement,.eoOutputWrapper .matrixElement {min-height: 18px; box-sizing: border-box;}
+.embeddedOutputsMatrixElement .matrixElement,.eoOutputWrapper .matrixElement,.rtcDataTipElement .matrixElement {position: relative;}
+.matrixElement .variableValue,.rtcDataTipElement .matrixElement .variableValue {white-space: pre; display: inline-block; vertical-align: top; overflow: hidden;}
+.embeddedOutputsMatrixElement.inlineElement {}
+.embeddedOutputsMatrixElement.inlineElement .topHeaderWrapper {display: none;}
+.embeddedOutputsMatrixElement.inlineElement .veTable .body {padding-top: 0 !important; max-height: 100px;}
+.inlineElement .matrixElement {max-height: 300px;}
+.embeddedOutputsMatrixElement.rightPaneElement {}
+.rightPaneElement .matrixElement,.rtcDataTipElement .matrixElement {overflow: hidden; padding-left: 9px;}
+.rightPaneElement .matrixElement {margin-bottom: -1px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer,.eoOutputWrapper .matrixElement .valueContainer,.rtcDataTipElement .matrixElement .valueContainer {white-space: nowrap; margin-bottom: 3px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis.hide,.embeddedOutputsMatrixElement .matrixElement .verticalEllipsis.hide,.eoOutputWrapper .matrixElement .valueContainer .horizontalEllipsis.hide,.eoOutputWrapper .matrixElement .verticalEllipsis.hide,.rtcDataTipElement .matrixElement .valueContainer .horizontalEllipsis.hide,.rtcDataTipElement .matrixElement .verticalEllipsis.hide {display: none;}
+.embeddedOutputsVariableMatrixElement .matrixElement .valueContainer.hideEllipses .verticalEllipsis, .embeddedOutputsVariableMatrixElement .matrixElement .valueContainer.hideEllipses .horizontalEllipsis {display:none;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis,.eoOutputWrapper .matrixElement .valueContainer .horizontalEllipsis {margin-bottom: -3px;}
+.eoOutputWrapper .embeddedOutputsVariableMatrixElement .matrixElement .valueContainer {cursor: default !important;}
+.embeddedOutputsVariableElement {white-space: pre-wrap; word-wrap: break-word; min-height: 18px; max-height: 250px; overflow: auto;}
+.variableElement {}
+.embeddedOutputsVariableElement.inlineElement {}
+.inlineElement .variableElement {}
+.embeddedOutputsVariableElement.rightPaneElement {min-height: 16px;}
+.rightPaneElement .variableElement {padding-top: 2px; padding-left: 9px;}
+.variableNameElement {margin-bottom: 3px; display: inline-block;}
+.matrixElement .horizontalEllipsis,.rtcDataTipElement .matrixElement .horizontalEllipsis {display: inline-block; margin-top: 3px; width: 30px; height: 12px; background-repeat: no-repeat; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAJCAYAAADO1CeCAAAAJUlEQVR42mP4//8/A70xw0i29BUDFPxnAEtTW37wWDqakIa4pQDvOOG89lHX2gAAAABJRU5ErkJggg==");}
+.matrixElement .verticalEllipsis,.textElement .verticalEllipsis,.rtcDataTipElement .matrixElement .verticalEllipsis,.rtcDataTipElement .textElement .verticalEllipsis {margin-left: 35px; width: 12px; height: 30px; background-repeat: no-repeat; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAZCAYAAAAIcL+IAAAALklEQVR42mP4//8/AzGYgWyFMECMwv8QddRS+P//KyimlmcGUOFoOI6GI/UVAgDnd8Dd4+NCwgAAAABJRU5ErkJggg==");}
+.S6 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 0px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S7 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S8 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 6px 45px 0px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }</style></head><body><div class = rtcContent><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S0'><span style="white-space: pre;"><span class="error_squiggle_rte" style="color: rgb(34, 139, 34);">%</span><span style="color: rgb(34, 139, 34);">Gaussian elimination with partial pivoting</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre;"><span>n = 10;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%{ </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% Case a)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%identity = eye(n)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">A = zeros(n);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">b = [4:0.7:(0.7*n+3.3)]';</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% fill in a</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">for i = 1:n</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">    for j = 1:n</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">        if i == j</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">            A(i, j) = 8;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">        elseif (i == j-1) || (i == j+1)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">            A(i, j) = 2;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">        end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">    end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%}</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% Case b)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>A = zeros(n);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>b = zeros(n, 1);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% fill in a</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">for </span><span>i = 1:n</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">for </span><span>j = 1:n</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>        A(i, j) = 3/(5*(i+j+1));</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% fill in b</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">for </span><span>i = 1:n</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">if </span><span>mod(i, 2) == 1</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>        b(i) = 0;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">else </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>        b(i) = 5/(4*i);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span>A</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="35D508EE" data-scroll-top="null" data-scroll-left="null" data-width="1056" data-testid="output_0" style="width: 1086px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 1056px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">A = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×10</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:10,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 732px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">    0.2000    0.1500    0.1200    0.1000    0.0857    0.0750    0.0667    0.0600    0.0545    0.0500
+    0.1500    0.1200    0.1000    0.0857    0.0750    0.0667    0.0600    0.0545    0.0500    0.0462
+    0.1200    0.1000    0.0857    0.0750    0.0667    0.0600    0.0545    0.0500    0.0462    0.0429
+    0.1000    0.0857    0.0750    0.0667    0.0600    0.0545    0.0500    0.0462    0.0429    0.0400
+    0.0857    0.0750    0.0667    0.0600    0.0545    0.0500    0.0462    0.0429    0.0400    0.0375
+    0.0750    0.0667    0.0600    0.0545    0.0500    0.0462    0.0429    0.0400    0.0375    0.0353
+    0.0667    0.0600    0.0545    0.0500    0.0462    0.0429    0.0400    0.0375    0.0353    0.0333
+    0.0600    0.0545    0.0500    0.0462    0.0429    0.0400    0.0375    0.0353    0.0333    0.0316
+    0.0545    0.0500    0.0462    0.0429    0.0400    0.0375    0.0353    0.0333    0.0316    0.0300
+    0.0500    0.0462    0.0429    0.0400    0.0375    0.0353    0.0333    0.0316    0.0300    0.0286
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper outputs"><div  class = 'S6'><span style="white-space: pre;"><span>b</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="81A03A31" data-scroll-top="null" data-scroll-left="null" data-width="1056" data-testid="output_1" style="width: 1086px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 1056px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">b = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 75px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">         0
+    0.6250
+         0
+    0.3125
+         0
+    0.2083
+         0
+    0.1562
+         0
+    0.1250
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%Step 1 - Put into Triangluar Form</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% merge A and b</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>triangle = [A b];</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% for each row, put it into specail function</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">for </span><span>i = 1:n-1</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">for </span><span>j = i+1:n</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>        row1 = triangle(i, i:end);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>        row2 = triangle(j, i:end);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>        triangle(j, i:end) = zeroFristElement(row1, row2);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S7'><span style="white-space: pre;"><span>triangle</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="9546D6E4" data-scroll-top="null" data-scroll-left="null" data-width="1056" data-testid="output_2" style="width: 1086px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 1056px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">triangle = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×11</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:11,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 805px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">    0.2000    0.1500    0.1200    0.1000    0.0857    0.0750    0.0667    0.0600    0.0545    0.0500         0
+         0    0.0075    0.0100    0.0107    0.0107    0.0104    0.0100    0.0095    0.0091    0.0087    0.6250
+         0         0    0.0004    0.0007    0.0010    0.0011    0.0012    0.0013    0.0013    0.0013   -0.8333
+         0         0         0    0.0000    0.0001    0.0001    0.0001    0.0001    0.0001    0.0002    0.9821
+         0         0   -0.0000         0    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000   -1.1667
+         0         0         0         0         0    0.0000    0.0000    0.0000    0.0000    0.0000    1.4236
+         0         0         0   -0.0000         0         0    0.0000    0.0000    0.0000    0.0000   -1.7807
+         0         0         0         0         0         0         0    0.0000    0.0000    0.0000    2.2719
+         0         0         0         0    0.0000    0.0000         0         0    0.0000    0.0000   -2.9437
+         0         0         0         0         0         0         0   -0.0000         0    0.0000    3.8614
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%Step 2- Solve by back substitution</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S7'><span style="white-space: pre;"><span>x = zeros(n,1)</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="850AC426" data-scroll-top="null" data-scroll-left="null" data-width="1056" data-testid="output_3" style="width: 1086px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 1056px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">x = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:44,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:6}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 46px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">for </span><span>i = n:-1:1</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    numerator = triangle(i, end) - sumPreviousElements (triangle(i, i:end-1)', x(i:end));</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    x(i) = numerator/triangle(i, i);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S7'><span style="white-space: pre;"><span>x</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="5230FFE7" data-scroll-top="null" data-scroll-left="null" data-width="1056" data-testid="output_4" style="width: 1086px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 1056px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">x = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="veScalingFactor" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">10<sup>13</sup><span class="multiply" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"> ×</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 75px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">   -0.0001
+    0.0051
+   -0.0646
+    0.4130
+   -1.5209
+    3.4223
+   -4.7826
+    4.0507
+   -1.9039
+    0.3810
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper outputs"><div  class = 'S6'><span style="white-space: pre;"><span>matlabX = mldivide(A, b)</span></span></div><div  class = 'S5'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="0C28A10E" data-scroll-top="null" data-scroll-left="null" data-width="1056" data-testid="output_5" style="width: 1086px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 1056px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">matlabX = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="veScalingFactor" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">10<sup>13</sup><span class="multiply" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"> ×</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 75px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">   -0.0001
+    0.0051
+   -0.0646
+    0.4129
+   -1.5204
+    3.4212
+   -4.7812
+    4.0495
+   -1.9033
+    0.3809
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S0'></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">function </span><span>[newRow] = zeroFristElement (row1, row2)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    rowMultiplier = row2(1,1) / row1(1,1);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    newRow = row2' - rowMultiplier * row1';</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    newRow = newRow';</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">function </span><span>[newSum] = sumPreviousElements (colA, colX)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    newVec = colA .* colX;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>    newSum = sum(newVec, </span><span style="color: rgb(160, 32, 240);">'all'</span><span>);</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% find Ax = b, without A/b</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%r = (A*x)-b</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%delX = mldivide(A,r)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%newX = x - delX</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%newR = (A*newX)-b</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%norm(r)</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%norm(newR)</span></span></div></div></div></div><br>
+<!-- 
+##### SOURCE BEGIN #####
+%Gaussian elimination with partial pivoting
+%%
+n = 10;
+%{ 
+% Case a)
+%identity = eye(n)
+A = zeros(n);
+b = [4:0.7:(0.7*n+3.3)]';
+% fill in a
+for i = 1:n
+    for j = 1:n
+        if i == j
+            A(i, j) = 8;
+        elseif (i == j-1) || (i == j+1)
+            A(i, j) = 2;
+        end
+    end
+end
+%}
+%%
+% Case b)
+A = zeros(n);
+b = zeros(n, 1);
+% fill in a
+for i = 1:n
+    for j = 1:n
+        A(i, j) = 3/(5*(i+j+1));
+    end
+end
+% fill in b
+for i = 1:n
+    if mod(i, 2) == 1
+        b(i) = 0;
+    else 
+        b(i) = 5/(4*i);
+    end
+end
+%%
+A
+b
+%%
+%Step 1 - Put into Triangluar Form
+% merge A and b
+triangle = [A b];
+% for each row, put it into specail function
+for i = 1:n-1
+    for j = i+1:n
+        row1 = triangle(i, i:end);
+        row2 = triangle(j, i:end);
+        triangle(j, i:end) = zeroFristElement(row1, row2);
+    end
+end
+triangle
+%%
+%Step 2- Solve by back substitution
+x = zeros(n,1)
+for i = n:-1:1
+    numerator = triangle(i, end) - sumPreviousElements (triangle(i, i:end-1)', x(i:end));
+    x(i) = numerator/triangle(i, i);
+end
+x
+matlabX = mldivide(A, b)
+%%
+
+%%
+function [newRow] = zeroFristElement (row1, row2)
+    rowMultiplier = row2(1,1) / row1(1,1);
+    newRow = row2' - rowMultiplier * row1';
+    newRow = newRow';
+end
+
+function [newSum] = sumPreviousElements (colA, colX)
+    newVec = colA .* colX;
+    newSum = sum(newVec, 'all');
+end
+%%
+% find Ax = b, without A/b
+
+%r = (A*x)-b
+%delX = mldivide(A,r)
+%newX = x - delX
+%newR = (A*newX)-b
+%norm(r)
+%norm(newR)
+##### SOURCE END #####
+--></body></html>

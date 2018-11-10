@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB R2018b"><title>Untitled</title><style type="text/css">.rtcContent { padding: 30px; } .CodeBlock { background-color: #F7F7F7; margin: 10px 0 10px 0;}
+.S0 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S1 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 4px 4px 0px 0px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S2 { color: rgb(64, 64, 64); padding: 10px 0px 6px 17px; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px; overflow-x: hidden; line-height: 17.234001159668px;  }
+.S3 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 6px 45px 0px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S4 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.variableValue { width: 100% !important; }
+.embeddedOutputsMatrixElement,.eoOutputWrapper .matrixElement {min-height: 18px; box-sizing: border-box;}
+.embeddedOutputsMatrixElement .matrixElement,.eoOutputWrapper .matrixElement,.rtcDataTipElement .matrixElement {position: relative;}
+.matrixElement .variableValue,.rtcDataTipElement .matrixElement .variableValue {white-space: pre; display: inline-block; vertical-align: top; overflow: hidden;}
+.embeddedOutputsMatrixElement.inlineElement {}
+.embeddedOutputsMatrixElement.inlineElement .topHeaderWrapper {display: none;}
+.embeddedOutputsMatrixElement.inlineElement .veTable .body {padding-top: 0 !important; max-height: 100px;}
+.inlineElement .matrixElement {max-height: 300px;}
+.embeddedOutputsMatrixElement.rightPaneElement {}
+.rightPaneElement .matrixElement,.rtcDataTipElement .matrixElement {overflow: hidden; padding-left: 9px;}
+.rightPaneElement .matrixElement {margin-bottom: -1px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer,.eoOutputWrapper .matrixElement .valueContainer,.rtcDataTipElement .matrixElement .valueContainer {white-space: nowrap; margin-bottom: 3px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis.hide,.embeddedOutputsMatrixElement .matrixElement .verticalEllipsis.hide,.eoOutputWrapper .matrixElement .valueContainer .horizontalEllipsis.hide,.eoOutputWrapper .matrixElement .verticalEllipsis.hide,.rtcDataTipElement .matrixElement .valueContainer .horizontalEllipsis.hide,.rtcDataTipElement .matrixElement .verticalEllipsis.hide {display: none;}
+.embeddedOutputsVariableMatrixElement .matrixElement .valueContainer.hideEllipses .verticalEllipsis, .embeddedOutputsVariableMatrixElement .matrixElement .valueContainer.hideEllipses .horizontalEllipsis {display:none;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis,.eoOutputWrapper .matrixElement .valueContainer .horizontalEllipsis {margin-bottom: -3px;}
+.eoOutputWrapper .embeddedOutputsVariableMatrixElement .matrixElement .valueContainer {cursor: default !important;}
+.embeddedOutputsVariableElement {white-space: pre-wrap; word-wrap: break-word; min-height: 18px; max-height: 250px; overflow: auto;}
+.variableElement {}
+.embeddedOutputsVariableElement.inlineElement {}
+.inlineElement .variableElement {}
+.embeddedOutputsVariableElement.rightPaneElement {min-height: 16px;}
+.rightPaneElement .variableElement {padding-top: 2px; padding-left: 9px;}
+.variableNameElement {margin-bottom: 3px; display: inline-block;}
+.matrixElement .horizontalEllipsis,.rtcDataTipElement .matrixElement .horizontalEllipsis {display: inline-block; margin-top: 3px; width: 30px; height: 12px; background-repeat: no-repeat; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAJCAYAAADO1CeCAAAAJUlEQVR42mP4//8/A70xw0i29BUDFPxnAEtTW37wWDqakIa4pQDvOOG89lHX2gAAAABJRU5ErkJggg==");}
+.matrixElement .verticalEllipsis,.textElement .verticalEllipsis,.rtcDataTipElement .matrixElement .verticalEllipsis,.rtcDataTipElement .textElement .verticalEllipsis {margin-left: 35px; width: 12px; height: 30px; background-repeat: no-repeat; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAZCAYAAAAIcL+IAAAALklEQVR42mP4//8/AzGYgWyFMECMwv8QddRS+P//KyimlmcGUOFoOI6GI/UVAgDnd8Dd4+NCwgAAAABJRU5ErkJggg==");}
+.S5 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 0px; padding: 6px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S6 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 1.20000004768372px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S7 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S8 { border-left: 1.20000004768372px solid rgb(233, 233, 233); border-right: 1.20000004768372px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1.20000004768372px solid rgb(233, 233, 233); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 17.234001159668px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }</style></head><body><div class = rtcContent><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S0'><span style="white-space: pre;"><span class="error_squiggle_rte" style="color: rgb(34, 139, 34);">%</span><span style="color: rgb(34, 139, 34);">Gaussian elimination with partial pivoting</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S1'><span style="white-space: pre;"><span>n = 10</span></span></div><div  class = 'S2'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; '>n = 10</div></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">%identity = eye(n)</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span>A = zeros(n)</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="DEC32040" data-scroll-top="null" data-scroll-left="null" data-width="776" data-testid="output_1" style="width: 806px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 776px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">A = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×10</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:44,&quot;totalColumns&quot;:10,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:6}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 442px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper outputs"><div  class = 'S5'><span style="white-space: pre;"><span>b = </span><span>[4:0.7:(0.7*n+3.3)]'</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="EDA72DC4" data-scroll-top="null" data-scroll-left="null" data-width="776" data-testid="output_2" style="width: 806px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 776px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">b = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 75px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">    4.0000
+    4.7000
+    5.4000
+    6.1000
+    6.8000
+    7.5000
+    8.2000
+    8.9000
+    9.6000
+   10.3000
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% fill in a</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">for </span><span>i = 1:n</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">for </span><span>j = 1:n</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>        </span><span style="color: rgb(0, 0, 255);">if </span><span>i == j</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>            A(i, j) = 8;</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>        </span><span style="color: rgb(0, 0, 255);">elseif </span><span>(i == j-1) || (i == j+1)</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>            A(i, j) = 2;</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>        </span><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>    </span><span style="color: rgb(0, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre;"><span style="color: rgb(0, 0, 255);">end</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span style="color: rgb(34, 139, 34);">% find Ax = b, without A/b</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S4'><span style="white-space: pre;"><span>A</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="F584FF04" data-scroll-top="null" data-scroll-left="null" data-width="776" data-testid="output_3" style="width: 806px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 776px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">A = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×10</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:44,&quot;totalColumns&quot;:10,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:6}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 442px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">     8     2     0     0     0     0     0     0     0     0
+     2     8     2     0     0     0     0     0     0     0
+     0     2     8     2     0     0     0     0     0     0
+     0     0     2     8     2     0     0     0     0     0
+     0     0     0     2     8     2     0     0     0     0
+     0     0     0     0     2     8     2     0     0     0
+     0     0     0     0     0     2     8     2     0     0
+     0     0     0     0     0     0     2     8     2     0
+     0     0     0     0     0     0     0     2     8     2
+     0     0     0     0     0     0     0     0     2     8
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper outputs"><div  class = 'S5'><span style="white-space: pre;"><span>x = mldivide(A, b)</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="7770EEA8" data-scroll-top="null" data-scroll-left="null" data-width="776" data-testid="output_4" style="width: 806px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 776px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">x = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 75px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">    0.4070
+    0.3719
+    0.4553
+    0.5070
+    0.5667
+    0.6262
+    0.6786
+    0.7593
+    0.7342
+    1.1040
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper outputs"><div  class = 'S5'><span style="white-space: pre;"><span>r = (A*x)-b</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="16756E88" data-scroll-top="null" data-scroll-left="null" data-width="776" data-testid="output_5" style="width: 806px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 776px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">r = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="veScalingFactor" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">10<sup>-14</sup><span class="multiply" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"> ×</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 75px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">         0
+         0
+    0.0888
+    0.0888
+   -0.0888
+         0
+         0
+         0
+    0.1776
+   -0.1776
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div></div><div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S1'><span style="white-space: pre;"><span>delX = mldivide(A,r)</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="D6A4D139" data-scroll-top="null" data-scroll-left="null" data-width="776" data-testid="output_6" style="width: 806px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 776px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">delX = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="veScalingFactor" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">10<sup>-15</sup><span class="multiply" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"> ×</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 75px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">    0.0056
+   -0.0226
+    0.0847
+    0.1278
+   -0.1517
+    0.0350
+    0.0119
+   -0.0825
+    0.3181
+   -0.3016
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper outputs"><div  class = 'S5'><span style="white-space: pre;"><span>newX = x - delX</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="ADB98DBE" data-scroll-top="null" data-scroll-left="null" data-width="776" data-testid="output_7" style="width: 806px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 776px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">newX = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:73,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:10}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 75px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">    0.4070
+    0.3719
+    0.4553
+    0.5070
+    0.5667
+    0.6262
+    0.6786
+    0.7593
+    0.7342
+    1.1040
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div><div class="inlineWrapper outputs"><div  class = 'S5'><span style="white-space: pre;"><span>newR = (A*newX)-b</span></span></div><div  class = 'S2'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableMatrixElement" uid="C44060A1" data-scroll-top="null" data-scroll-left="null" data-width="776" data-testid="output_8" style="width: 806px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="matrixElement veSpecifier" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="veVariableName variableNameElement double" style="width: 776px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><span style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">newR = </span><span class="veVariableValueSummary veMetaSummary" style="white-space: normal; font-style: normal; color: rgb(179, 179, 179); font-size: 12px;">10×1</span></div><div class="valueContainer" data-layout="{&quot;columnWidth&quot;:44,&quot;totalColumns&quot;:1,&quot;totalRows&quot;:10,&quot;charsPerColumn&quot;:6}" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="variableValue" style="width: 46px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+</div><div class="horizontalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div><div class="verticalEllipsis hide" style="white-space: nowrap; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div></div><div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S1'><span style="white-space: pre;"><span>norm(r)</span></span></div><div  class = 'S2'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; '>ans = 2.9458e-15</div></div></div><div class="inlineWrapper outputs"><div  class = 'S5'><span style="white-space: pre;"><span>norm(newR)</span></span></div><div  class = 'S2'><div class='variableElement' style='font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; '>ans = 0</div></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S0'></div></div></div></div><br>
+<!-- 
+##### SOURCE BEGIN #####
+%Gaussian elimination with partial pivoting
+%%
+n = 10
+%identity = eye(n)
+A = zeros(n)
+b = [4:0.7:(0.7*n+3.3)]'
+%%
+% fill in a
+for i = 1:n
+    for j = 1:n
+        if i == j
+            A(i, j) = 8;
+        elseif (i == j-1) || (i == j+1)
+            A(i, j) = 2;
+        end
+    end
+end
+%%
+% find Ax = b, without A/b
+A
+x = mldivide(A, b)
+r = (A*x)-b
+%%
+delX = mldivide(A,r)
+newX = x - delX
+newR = (A*newX)-b
+%%
+norm(r)
+norm(newR)
+%%
+##### SOURCE END #####
+--></body></html>
